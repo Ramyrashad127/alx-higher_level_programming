@@ -6,21 +6,14 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *st = malloc(sizeof(listint_t));
+	listint_t *st = list;
 
-	st = list->next;
-	while(st->next != NULL && st != list)
-	{
-		st = st->next;
-	}
-	if (st == list)
-	{
-		free(st);
-		return (1);
-	}
-	else
-	{
-		free(st);
+	if (!list)
 		return(0);
-	}
+	st = list->next;
+	while(!st && st != list)
+		st = st->next;
+	if (st == list)
+		return (1);
+	return (0);
 }
