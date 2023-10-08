@@ -8,20 +8,20 @@
 int is_palindrome(listint_t **head)
 {
 	int i = 0, j = 0, k;
-	int arr[1024];
+	int *arr;
 	listint_t *ptr = *head;
 	if(!head)
 		return (1);
 	if (!(*head))
 		return (1);
-	/*while (ptr)
+	while (ptr)
 	{
 		ptr = ptr->next;
 		i++;
 	}
 	arr = malloc(sizeof(int) * i);
 	ptr = *head;
-	i = 0;*/
+	i = 0;
 	while (ptr)
 	{
 		arr[i] = ptr->n;
@@ -32,10 +32,10 @@ int is_palindrome(listint_t **head)
 	{
 		if(arr[j] != arr[k])
 		{
-			//free(arr);
+			free(arr);
 			return (0);
 		}
 	}
-	//free(arr);
+	free(arr);
 	return (1);
 }
