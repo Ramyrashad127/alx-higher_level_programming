@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usrt/binpython3
 def safe_print_division(a, b):
     value = 0
     try:
