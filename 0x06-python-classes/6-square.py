@@ -62,7 +62,8 @@ class Square:
 
     @position.setter
     def position(self, value):
-        """set value
+        """ method
+        value: up
         """
         if ((isinstance(value, tuple)) and (len(value) == 2)):
                 if value[0] > 0 and value[1] > 0:
