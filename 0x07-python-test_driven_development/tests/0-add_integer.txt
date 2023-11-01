@@ -67,3 +67,15 @@ test11:
 	...
 	OverflowError: cannot convert float infinity to integer
 
+test12:
+	>>> add(None, None)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+test13:
+	add(456456, [])
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
+
