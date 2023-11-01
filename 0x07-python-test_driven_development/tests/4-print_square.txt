@@ -1,0 +1,42 @@
+>>> s = __import__('4-print_square').print_square
+
+>>> s(3)
+###
+###
+###
+
+>>> s(float('inf'))
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> s(float('nan'))
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> s()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+>>> s(None)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> s("ramy")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> s(12.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> s(-15)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
