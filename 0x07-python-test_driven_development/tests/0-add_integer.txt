@@ -79,3 +79,9 @@ test13:
 	...
 	TypeError: b must be an integer
 
+test14:
+	>>> add_integer(0, float('nan'))
+	Traceback (most recent call last):
+	...
+	ValueError: cannot convert float NaN to integer
+
