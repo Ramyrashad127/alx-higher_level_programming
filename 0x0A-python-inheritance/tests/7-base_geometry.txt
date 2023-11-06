@@ -7,7 +7,7 @@ ValueError: invalid literal for int() with base 10: 'inf'
 
 >>> new.integer_validator("numb", -100)
 Traceback (most recent call last):
-ValueError: number must be greater than 0
+ValueError: numb must be greater than 0
 
 >>> new.integer_validator("numbers", 20, 9)
 Traceback (most recent call last):
