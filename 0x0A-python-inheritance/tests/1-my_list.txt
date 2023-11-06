@@ -1,6 +1,10 @@
 >>> MyList = __import__('1-my_list').MyList
 
 >>> new = MyList()
+>>> isinstance(new, list)
+True
+>>> new.print_sorted()
+[]
 >>> new.append(12)
 >>> new.append(0)
 >>> new.append(9)
@@ -28,3 +32,6 @@ ValueError: invalid literal for int() with base 10: 'inf'
 >>> new.print_sorted()
 [4, 4, 4, 4, 4, 10000000000000000000000000000000000000000000]
 
+>>> new.append(NULL)
+Traceback (most recent call last):
+NameError: name 'NULL' is not defined
