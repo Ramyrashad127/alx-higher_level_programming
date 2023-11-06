@@ -1,0 +1,46 @@
+>>> MyList = __import__('1-my_list').MyList
+
+>>> new = MyList()
+
+>>> isinstance(new, list)
+True
+
+>>> new.print_sorted()
+[]
+
+>>> new.append(None)
+>>> new.print_sorted()
+Traceback (most recent call last):
+TypeError: unorderable types: NoneType() < int()
+
+>>> new.append(NULL)
+Traceback (most recent call last):
+NameError: name 'NULL' is not defined
+
+>>> new.append(12)
+>>> new.append(0)
+>>> new.append(9)
+>>> new.print_sorted()
+[0, 9, 12]
+
+>>> new.append(int('inf'))
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: 'inf'
+
+>>> new.append(-15)
+>>> my_list.print_sorted()
+[-15, 0, 9, 12]
+
+>>> my_list.clear()
+>>> new.append(4)
+>>> new.append(4)
+>>> new.append(4)
+>>> new.append(4)
+>>> new.append(4)
+>>> new.print_sorted()
+[4, 4, 4, 4, 4]
+
+>>> new.append(10000000000000000000000000000000000000000000)
+>>> new.print_sorted()
+[4, 4, 4, 4, 4, 10000000000000000000000000000000000000000000]
+
