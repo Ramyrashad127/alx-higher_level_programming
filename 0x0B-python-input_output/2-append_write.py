@@ -3,6 +3,6 @@
 
 
 def write_file(filename="", text=""):
-    """ write"""
+    """ a"""
     with open(filename, "a", encoding="UTF-8") as fi:
         return fi.write(text)
