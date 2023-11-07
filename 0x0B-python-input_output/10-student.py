@@ -24,4 +24,3 @@ class Student:
             if i in attrs:
                 new[i] = j
         return new
-
