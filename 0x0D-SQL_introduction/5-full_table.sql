@@ -1,2 +1,2 @@
---new task sql
+-- new task sql
 SHOW CREATE TABLE 'first_table';
