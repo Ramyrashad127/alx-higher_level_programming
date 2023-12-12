@@ -1,3 +1,2 @@
---new task sql
-USE hbtn_0c_0;
+-- new task sql
 SELECT * FROM first_table;
