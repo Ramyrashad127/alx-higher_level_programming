@@ -1,2 +1,3 @@
 --new task sql
-SELECT * FROM 'first_table';
+USE $1;
+SELECT * FROM first_table;
