@@ -4,7 +4,7 @@ if (!parseInt(process.argv[2])) {
 } else {
   let res = '';
   for (let i = 0; i < parseInt(process.argv[2]); i++) {
-    res += 'x';
+    res += 'X';
   }
   for (let i = 0; i < parseInt(process.argv[2]); i++) {
     console.log(res);
