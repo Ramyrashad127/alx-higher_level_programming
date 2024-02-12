@@ -3,7 +3,7 @@ function fact (x) {
   if (x === 1) {
     return (1);
   }
-  return (x * fact(x-1));
+  return (x * fact(x - 1));
 }
 if (process.argv.length === 2) {
   console.log(1);
