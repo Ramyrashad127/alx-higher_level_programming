@@ -14,4 +14,5 @@ module.exports = class Rectangle {
     for (let i = 0; i < this.height; i++) {
       console.log(s);
     }
+  }
 };
