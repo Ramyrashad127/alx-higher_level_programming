@@ -1,3 +1,2 @@
 #!/usr/bin/node
-class Rectangle {}
-
+const obj = class Rectangle {};
