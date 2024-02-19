@@ -13,8 +13,8 @@ if __name__ == "__main__":
             db=argv[3]
             )
     cur = con.cursor()
-    cur.execute(f"SELECT * FROM states WHERE name = {argv[4]}\
-            BINARY 'N%' ORDER BY id ASC")
+    cur.execute("SELECT * FROM states WHERE name = {}\
+            ORDER BY id ASC".format(argv[4]))
     data = cur.fetchall()
     for i in data:
         print(i)
