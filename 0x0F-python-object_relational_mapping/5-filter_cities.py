@@ -13,9 +13,9 @@ if __name__ == "__main__":
             db=argv[3]
             )
     cur = con.cursor()
-    cur.execute("SELECT cities.id, cities.name, FROM cities\
+    cur.execute("SELECT cities.id, cities.name FROM cities\
             INNER JOIN states ON cities.state_id = states.id\
-            WHERE states.name = %s", [arv[4]])
+            WHERE states.name = %s", [arvg[4]])
     data = cur.fetchall()
     for i in data:
         print(i)
