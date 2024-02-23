@@ -4,7 +4,7 @@
 from sys import argv
 import MySQLdb
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     con = MySQLdb.connect(
             host='localhost',
             port=3306,
@@ -13,11 +13,12 @@ if __name__ == "__main__":
             db=argv[3]
             )
     cur = con.cursor()
-    cur.execute("SELECT cities.id, cities.name FROM cities\
+    cur.execute("SELECT cities.name FROM cities\
             INNER JOIN states ON cities.state_id = states.id\
-            WHERE states.name = %s", (argv[4],))
+            WHERE states.name = %s ORDER BY cities.id", (argv[4],))
     data = cur.fetchall()
     for i in data:
-        print(i)
+        print(i[0] +',',end=' ')
+    print()
     cur.close()
     con.close()
