@@ -15,4 +15,4 @@ if __name__ == '__main__':
     if data is None:
         print('Nothing')
     else:
-            print(f'{data.id}: {data.name}')
+        print(f'{data.id}: {data.name}')
