@@ -12,7 +12,7 @@ if __name__ == '__main__':
     session = sessionmaker(engine)
     se = session()
     data = se.query(State).limit(1)
-    if data == None:
+    if data is None:
         print('Nothing')
     else:
         for ele in data:
