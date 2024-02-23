@@ -11,6 +11,9 @@ if __name__ == '__main__':
             f"mysql+mysqldb://{argv[1]}:{argv[2]}@localhost/{argv[3]}")
     session = sessionmaker(engine)
     se = session()
-    data = se.query(State).order_by(State.id).limit(1)
-    for ele in data:
-        print(f'{ele.id}: {ele.name}')
+    data = se.query(State).limit(1)
+    if data == None:
+        print('Nothing')
+    else:
+        for ele in data:
+            print(f'{ele.id}: {ele.name}')
