@@ -18,7 +18,7 @@ if __name__ == '__main__':
             WHERE states.name = %s ORDER BY cities.id", (argv[4],))
     data = cur.fetchall()
     for i in data:
-        print(i[0] +',',end=' ')
+        print(i[0] + ',', end=' ')
     print()
     cur.close()
     con.close()
