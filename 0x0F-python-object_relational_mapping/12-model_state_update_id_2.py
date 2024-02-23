@@ -11,5 +11,5 @@ if __name__ == '__main__':
             f"mysql+mysqldb://{argv[1]}:{argv[2]}@localhost/{argv[3]}")
     session = sessionmaker(engine)
     se = session()
-    ob = se.query(State).filter(State.id == 2).update({"name" : 'New Mexico'})
+    ob = se.query(State).filter(State.id == 2).update({"name": 'New Mexico'})
     se.commit()
