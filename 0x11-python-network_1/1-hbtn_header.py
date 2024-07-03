@@ -10,4 +10,3 @@ if __name__ == "__main__":
     with urllib.request.urlopen(request) as response:
         header = dict(response.headers)
         print(header['X-Request-Id'])
-
