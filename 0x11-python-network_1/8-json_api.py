@@ -5,10 +5,10 @@ import sys
 
 
 if __name__ == "__main__":
-    if(len(sys.argv) == 1):
+    data = {'q' : ""}
+    if (len(sys.argv) == 2):
         data = {'q': ""}
-    else:
-        data = {'q': argv[2]}
+
     url = 'http://0.0.0.0:5000/search_user'
     re = requests.post(url, data=data)
     try:
